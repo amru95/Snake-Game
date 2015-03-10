@@ -4,8 +4,6 @@
 
 class Brick : public Coordinate2D
 {
-    protected:
-
     public:
         void Draw(){
             COORD coord;
