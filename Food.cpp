@@ -22,8 +22,8 @@ void Food :: Intalize(const Snake& snake){
     int GetXposition,GetYposition;
     Coordinate2D suggestedPoint;
     do{
-        GetXposition = random(2,77);   /// left edge + 2   till right edge -1
-        GetYposition = random(2,22);   /// Top edge + 1   till right edge -1
+        GetXposition = random(2,77);
+        GetYposition = random(2,22);
         suggestedPoint.set(GetXposition,GetYposition);
     }
     while(OccupiedPlace(snake,suggestedPoint));
