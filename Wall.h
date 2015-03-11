@@ -1,15 +1,11 @@
 #ifndef WALL_H
 #define WALL_H
 
-
 class Wall
 {
     public:
         Wall();
-        void Draw(){
-            for(int i=0;i<Maplength;i++)
-                Map[i].Draw();
-        }
+        void Draw();
 
     private:
         #define verticalWallLenght 23
