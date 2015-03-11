@@ -1,7 +1,6 @@
 #ifndef KEYBOARDCONTROL_H
 #define KEYBOARDCONTROL_H
 
-
 class KeyboardControl
 {
     #define KB_UP 72
