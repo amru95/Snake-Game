@@ -1,5 +1,5 @@
 #include "Snake.h"
-#include "Brick.cpp"
+#include "Brick.h"
 
 Snake :: Snake(){
     intalize(3);
