@@ -1,4 +1,5 @@
 #include "KeyboardControl.h"
+#include <cstdlib>
 #include <conio.h>
  
 void KeyboardControl :: update(Snake& s){
