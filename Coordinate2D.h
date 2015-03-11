@@ -7,10 +7,8 @@ class Coordinate2D
         int x,y;
 
     public:
-        void set(int x1, int y1) { x=x1; y=y1;}
-        bool operator == (const Coordinate2D& v2){
-                return(x == v2.x && y == v2.y);
-        }
+        void set(int x1, int y1);
+        bool operator == (const Coordinate2D& v2);
 
 friend class Brick;
 friend class Snake;
