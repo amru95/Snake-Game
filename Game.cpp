@@ -1,8 +1,10 @@
 #include "Game.h"
-#include "Snake.cpp"
-#include "Wall.cpp"
-#include "Food.cpp"
-#include "KeyboardControl.cpp"
+#include "Snake.h"
+#include "Wall.h"
+#include "Food.h"
+#include "KeyboardControl.h"
+#include <windows.h>
+#include <conio.h>
 
 Game :: Game(int _Level, int _PlayerLives=3, int _SnakeLength = 3, int _score = 0)
 {
@@ -20,21 +22,25 @@ void Game :: Draw(){
     food.Draw();
     wall.Draw();
 }
+
 bool Game :: hitfood(Snake& s, Food& f){
     return (s.Body[0] == f.apple);
 }
+
 bool Game :: hitItself(Snake& s){
     for(int i=1;i<s.Length;i++)
         if(s.Body[0] == s.Body[i] )
             return true;
     return false;
 }
+
 bool Game :: hitItwall(Snake& s, Wall& w){
     for(int i=0;i<w.Maplength;i++)
         if(s.Body[0] == w.Map[i] )
             return true;
     return false;
 }
+
 void Game :: GameLogic(Snake& s, Food& f, Wall& w){
     if(hitfood(s,f)){
         s.Length++;
@@ -48,6 +54,7 @@ void Game :: GameLogic(Snake& s, Food& f, Wall& w){
         game.Update();
     }
 }
+
 void Game :: Update(){
     while(PlayerLives > 0){
         if(kbhit())
