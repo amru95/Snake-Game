@@ -1,5 +1,5 @@
 #include "Food.h"
-#include "Coordinate2D.cpp"
+#include "Coordinate2D.h"
 #include <time.h>
  
 int Food :: random(int min, int max){
