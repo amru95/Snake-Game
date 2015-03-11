@@ -1,7 +1,6 @@
 #include "Snake.h"
 #include "Brick.cpp"
 
-
 Snake :: Snake(){
     intalize(3);
 }
