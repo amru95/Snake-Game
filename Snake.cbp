@@ -35,22 +35,24 @@
 			<Add option="-Wall" />
 			<Add option="-ansi" />
 			<Add option="-fexceptions" />
+			<Add directory="include" />
+			<Add directory="src" />
 		</Compiler>
-		<Unit filename="Brick.cpp" />
-		<Unit filename="Brick.h" />
-		<Unit filename="Coordinate2D.cpp" />
-		<Unit filename="Coordinate2D.h" />
-		<Unit filename="Food.cpp" />
-		<Unit filename="Food.h" />
-		<Unit filename="Game.cpp" />
-		<Unit filename="Game.h" />
-		<Unit filename="KeyboardControl.cpp" />
-		<Unit filename="KeyboardControl.h" />
-		<Unit filename="Snake.cpp" />
-		<Unit filename="Snake.h" />
-		<Unit filename="Wall.cpp" />
-		<Unit filename="Wall.h" />
+		<Unit filename="include/Brick.h" />
+		<Unit filename="include/Coordinate2D.h" />
+		<Unit filename="include/Food.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/KeyboardControl.h" />
+		<Unit filename="include/Snake.h" />
+		<Unit filename="include/Wall.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Brick.cpp" />
+		<Unit filename="src/Coordinate2D.cpp" />
+		<Unit filename="src/Food.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/KeyboardControl.cpp" />
+		<Unit filename="src/Snake.cpp" />
+		<Unit filename="src/Wall.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
